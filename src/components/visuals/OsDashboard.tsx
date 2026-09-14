@@ -35,7 +35,7 @@ export function OsDashboard({ dict }: OsDashboardProps) {
       <div className="grid lg:grid-cols-[220px_1fr]">
         <aside className="hidden border-r border-hairline bg-surface/60 p-5 lg:block">
           <p className="text-[10px] uppercase tracking-[0.22em] text-sand">
-            NORYX OS
+            {dict.brandMark}
           </p>
           <p className="mt-2 text-xs text-muted">{dict.title}</p>
           <ul className="mt-6 space-y-1">

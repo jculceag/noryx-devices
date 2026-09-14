@@ -21,7 +21,11 @@ export function DevicePassport({ dict }: DevicePassportProps) {
             <span className="block">{dict.titleLine1}</span>
             <span className="block">{dict.titleLine2}</span>
           </Headline>
-          <Prose className="mt-6">{dict.body}</Prose>
+          <p className="mt-4 text-lg text-titanium">{dict.subtitle}</p>
+          <Prose className="mt-5">{dict.body}</Prose>
+          <p className="mt-5 text-sm tracking-wide text-sand/90">
+            {dict.impactLine}
+          </p>
 
           <ol className="mt-8 flex flex-wrap gap-3">
             {dict.flow.map((step, i) => (
@@ -54,6 +58,8 @@ export function DevicePassport({ dict }: DevicePassportProps) {
               </li>
             ))}
           </ul>
+
+          <p className="mt-6 text-xs leading-relaxed text-muted">{dict.qrNote}</p>
         </Reveal>
 
         <Reveal delay={0.1} className="relative">

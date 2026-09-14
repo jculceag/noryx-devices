@@ -29,8 +29,8 @@ export function NoryxOs({ dict }: NoryxOsProps) {
       <Reveal delay={0.08} className="mt-10">
         <OsBoard
           modules={dict.modules}
-          osName={dict.osName}
-          tagline={dict.osTagline}
+          osName={dict.platformName}
+          tagline={dict.platformTagline}
           sampleValues={dict.sampleValues}
           conceptLabel={dict.conceptLabel}
         />

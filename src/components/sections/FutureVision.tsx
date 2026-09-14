@@ -35,6 +35,9 @@ export function FutureVision({ dict }: FutureVisionProps) {
             <span className="block">{dict.titleLine2}</span>
           </Headline>
           <Prose className="mt-8 max-w-2xl text-titanium/90">{dict.body}</Prose>
+          <p className="mt-10 text-[12px] uppercase tracking-[0.32em] text-sand">
+            {dict.closingLine}
+          </p>
         </Reveal>
       </div>
     </section>

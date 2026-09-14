@@ -8,6 +8,7 @@ type CertificationPanelProps = {
   deviceId: string;
   demoNote: string;
   grade: string;
+  gradeSub?: string;
   status: string;
   rows: readonly CertRow[];
 };
@@ -17,6 +18,7 @@ export function CertificationPanel({
   deviceId,
   demoNote,
   grade,
+  gradeSub,
   status,
   rows,
 }: CertificationPanelProps) {
@@ -29,14 +31,19 @@ export function CertificationPanel({
           </p>
           <p className="mt-2 font-mono text-xs text-muted">{deviceId}</p>
         </div>
-        <div className="text-right">
+        <div className="max-w-[14rem] text-right">
           <p className="text-[10px] uppercase tracking-[0.2em] text-muted">
             {demoNote}
           </p>
-          <p className="mt-2 font-display text-2xl tracking-wide text-white">
+          <p className="mt-2 font-display text-lg tracking-wide text-white md:text-xl">
             {grade}
           </p>
-          <p className="mt-1 text-[11px] uppercase tracking-[0.18em] text-sand">
+          {gradeSub ? (
+            <p className="mt-1 text-[10px] uppercase leading-relaxed tracking-[0.16em] text-muted">
+              {gradeSub}
+            </p>
+          ) : null}
+          <p className="mt-2 text-[11px] uppercase tracking-[0.18em] text-sand">
             {status}
           </p>
         </div>

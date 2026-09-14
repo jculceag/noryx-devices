@@ -25,6 +25,8 @@ export const en = {
     headlineLine2: "IN EVERY DEVICE.",
     subheadline:
       "NORYX connects sourcing, technical processing, quality control and global distribution into one integrated mobile device ecosystem.",
+    journeyLine:
+      "From origin to distribution, every device inside the NORYX ecosystem may carry a documented journey.",
     ctaPrimary: "Discover NORYX",
     ctaSecondary: "Our Operations",
     markets: "Dubai · Paraguay · Brazil · Global",
@@ -35,8 +37,8 @@ export const en = {
     id: "company",
     eyebrow: "02 / COMPANY",
     title: "Beyond Devices.",
-    p1: "NORYX Devices is being built as an international platform for the sourcing, technical processing, quality control and B2B distribution of pre owned mobile devices.",
-    p2: "Our model combines global sourcing, technical expertise, digital traceability and strategic distribution hubs to create a more reliable and efficient mobile device supply chain.",
+    p1: "NORYX Devices is being built as an international platform for the sourcing, technical processing, quality control and B2B distribution of pre-owned mobile devices.",
+    p2: "Our model is designed to combine global sourcing, technical expertise, digital traceability and strategic distribution hubs into a more reliable and efficient mobile device supply chain.",
     pillars: [
       "GLOBAL SOURCING",
       "TECHNICAL PROCESSING",
@@ -50,9 +52,55 @@ export const en = {
   stage: {
     note: "NORYX is currently in its development and implementation phase. Operational facilities and digital platforms presented on this website include planned infrastructure and conceptual interfaces.",
   },
+  opportunity: {
+    id: "opportunity",
+    eyebrow: "03 / OPPORTUNITY",
+    titleLine1: "THE OPPORTUNITY",
+    titleLine2: "IS TRUST.",
+    p1: "The global market for pre-owned devices moves millions of units across countries, suppliers, distributors and retailers.",
+    p2: "Along that path, critical information about origin, technical condition, grading and interventions performed on a device can be lost across the chain.",
+    p3: "NORYX is being structured to connect these stages inside an integrated, traceable and data-oriented model.",
+    problemsTitle: "Structural gaps in the chain",
+    problems: [
+      {
+        code: "01",
+        title: "FRAGMENTATION",
+        description:
+          "Sourcing, processing, grading and distribution often operate as independent stages.",
+      },
+      {
+        code: "02",
+        title: "INCONSISTENT STANDARDS",
+        description:
+          "Device grading can vary significantly between suppliers and markets.",
+      },
+      {
+        code: "03",
+        title: "LOW TRACEABILITY",
+        description:
+          "A device’s technical history rarely travels with it through the full commercial journey.",
+      },
+      {
+        code: "04",
+        title: "MULTIPLE INTERMEDIARIES",
+        description:
+          "A fragmented chain can raise costs, reduce efficiency and weaken quality control.",
+      },
+    ],
+    responseEyebrow: "NORYX ECOSYSTEM",
+    responseTitle: "An infrastructure designed to integrate these stages into one operational chain.",
+    flow: [
+      "SOURCING",
+      "PROCESSING",
+      "QUALITY",
+      "CERTIFICATION",
+      "TRACEABILITY",
+      "DISTRIBUTION",
+    ],
+  },
   globalModel: {
     id: "operations",
-    eyebrow: "03 / OPERATIONS",
+    eyebrow: "04 / OPERATIONS",
     title: "Global Operating Model",
     subtitle:
       "An international flow designed to connect sourcing, processing and distribution across strategic markets.",
@@ -65,7 +113,7 @@ export const en = {
         name: "United States",
         role: "Sourcing",
         description:
-          "Global sourcing of pre owned mobile devices and international inventory opportunities.",
+          "Global sourcing of pre-owned mobile devices and international inventory opportunities.",
       },
       {
         code: "DUBAI",
@@ -92,7 +140,7 @@ export const en = {
   },
   dubai: {
     id: "dubai",
-    eyebrow: "04 / DUBAI",
+    eyebrow: "05 / DUBAI",
     titleLine1: "NORYX DUBAI",
     titleLine2: "PROCESSING & QUALITY CENTER",
     intro:
@@ -114,7 +162,7 @@ export const en = {
   },
   processing: {
     id: "processing",
-    eyebrow: "05 / PROCESSING",
+    eyebrow: "06 / PROCESSING",
     title: "Technical Processing",
     intro:
       "Every device follows a structured technical journey designed to identify its condition, correct necessary issues and preserve original components whenever technically possible.",
@@ -147,16 +195,39 @@ export const en = {
   },
   verified: {
     id: "quality",
-    eyebrow: "06 / QUALITY",
+    eyebrow: "07 / QUALITY",
     title: "NORYX VERIFIED",
-    subtitle: "A new layer of trust for pre owned devices.",
-    body: "NORYX VERIFIED is being designed as a proprietary evaluation and certification standard for pre owned devices. Each device may carry a technical digital history associated with its IMEI.",
+    subtitle: "A new layer of trust for pre-owned devices.",
+    body: "NORYX VERIFIED is being developed as a proprietary evaluation and certification standard for devices. Each certified device may carry a technical history associated with its IMEI.",
     designed:
       "Designed to provide transparency across every stage of the device lifecycle.",
+    historyIntro:
+      "That history is being designed to include fields such as:",
+    historyFields: [
+      "Origin",
+      "Model",
+      "IMEI",
+      "Initial diagnostics",
+      "Battery health",
+      "Display",
+      "Cameras",
+      "Sensors",
+      "Connectivity",
+      "Cosmetic condition",
+      "Interventions performed",
+      "Replaced parts, when applicable",
+      "Final quality control",
+      "Grading",
+      "Processing date",
+      "Certification status",
+    ],
+    developmentNote:
+      "These capabilities are part of a product under development and are presented here as a conceptual standard.",
     panelTitle: "Device Diagnostic Panel",
     deviceId: "DEVICE ID · DEMO DEVICE",
     demoNote: "Demonstrative sample",
-    grade: "GRADE A",
+    grade: "DEMONSTRATIVE GRADE",
+    gradeSub: "CLASSIFICATION IN DEFINITION",
     certStatus: "READY FOR CERTIFICATION",
     rows: [
       { label: "IMEI", value: "•••• •••• •••• •••" },
@@ -167,7 +238,7 @@ export const en = {
       { label: "Sensors", value: "PASSED · DEMO" },
       { label: "Connectivity", value: "PASSED · DEMO" },
       { label: "Cosmetic Condition", value: "INSPECTED" },
-      { label: "Grade", value: "A · DEMO" },
+      { label: "Grade", value: "DEMO" },
       { label: "Certification Status", value: "CONCEPT" },
     ],
     imageAlt:
@@ -176,10 +247,13 @@ export const en = {
   },
   passport: {
     id: "passport",
-    eyebrow: "07 / PASSPORT",
+    eyebrow: "08 / PASSPORT",
     titleLine1: "ONE DEVICE.",
     titleLine2: "ONE DIGITAL HISTORY.",
-    body: "The NORYX Device Passport is being designed to create a traceable digital identity for every certified device.",
+    subtitle:
+      "A traceable digital identity for every device inside the NORYX ecosystem.",
+    body: "The NORYX Device Passport is being designed as a natural extension of NORYX VERIFIED, creating a verifiable technical identity for each certified device.",
+    impactLine: "Trust should travel with the device.",
     flow: ["Scan", "Verify", "Understand", "Trust"],
     journeyTitle: "Device identity journey",
     journey: [
@@ -188,6 +262,7 @@ export const en = {
       { label: "Processed" },
       { label: "Verified" },
       { label: "Graded" },
+      { label: "Certified" },
       { label: "Distributed" },
     ],
     fields: [
@@ -200,6 +275,8 @@ export const en = {
       "Certification",
       "Distribution",
     ],
+    qrNote:
+      "Scanning the demonstration QR Code represents access to that device’s verifiable history.",
     visual: {
       title: "DEVICE PASSPORT",
       subtitle: "Digital Identity Document",
@@ -221,12 +298,13 @@ export const en = {
   },
   technology: {
     id: "technology",
-    eyebrow: "08 / TECHNOLOGY",
+    eyebrow: "09 / TECHNOLOGY",
     title: "BUILT ON DATA.",
     intro:
       "NORYX intends to use proprietary technology to integrate sourcing, inventory, processing and distribution.",
-    osName: "NORYX OS",
-    osTagline: "The digital infrastructure behind the NORYX ecosystem.",
+    platformName: "NORYX OPERATIONS PLATFORM",
+    platformTagline:
+      "The digital infrastructure under development to connect data and operations inside the NORYX ecosystem.",
     conceptLabel: "Concept Interface",
     modules: [
       "Sourcing",
@@ -239,6 +317,9 @@ export const en = {
       "Sales",
       "Warranty",
       "Price Intelligence",
+      "Device Passport",
+      "NORYX Verified",
+      "Audit",
     ],
     sampleValues: ["DEMO", "SAMPLE", "•••", "CONCEPT DATA"],
     dashboard: {
@@ -268,53 +349,101 @@ export const en = {
       demoValue: "DEMO",
       sampleValue: "SAMPLE",
       placeholder: "•••",
+      brandMark: "NORYX OPS",
     },
     imageAlt:
-      "Conceptual operations dashboard representing the planned NORYX OS platform.",
+      "Conceptual operations dashboard representing the planned NORYX Operations Platform.",
     imageCaption: "Concept Interface",
   },
   why: {
     id: "why",
-    eyebrow: "09 / WHY NORYX",
+    eyebrow: "10 / WHY NORYX",
     title: "Why NORYX",
     pillars: [
       {
         icon: "integration" as const,
         title: "VERTICAL INTEGRATION",
-        description: "Connecting sourcing, processing and distribution.",
+        description:
+          "Connecting sourcing, technical processing, quality control and distribution.",
       },
       {
         icon: "quality" as const,
         title: "QUALITY STANDARD",
-        description: "Structured technical processes and consistent grading.",
+        description:
+          "Structured technical processes and consistent grading.",
       },
       {
         icon: "traceability" as const,
         title: "DIGITAL TRACEABILITY",
         description:
-          "A digital history designed around each individual device.",
+          "A technical identity developed around each individual device.",
       },
       {
         icon: "distribution" as const,
-        title: "GLOBAL DISTRIBUTION",
+        title: "GLOBAL NETWORK",
         description:
-          "A network designed to connect international inventory with high demand markets.",
+          "An international architecture connecting origin, processing and high-demand markets.",
+      },
+      {
+        icon: "intelligence" as const,
+        title: "OPERATIONAL INTELLIGENCE",
+        description:
+          "Data connecting inventory, quality, sourcing, costs and distribution to support decisions at scale.",
       },
     ],
   },
+  architecture: {
+    id: "architecture",
+    eyebrow: "11 / ARCHITECTURE",
+    title: "NORYX GLOBAL",
+    subtitle:
+      "A planned operational architecture connecting regional roles through shared technology and data.",
+    plannedNote:
+      "Presented as planned operational architecture, not as already incorporated legal entities.",
+    arms: [
+      {
+        code: "USA",
+        name: "NORYX SOURCING",
+        role: "USA",
+      },
+      {
+        code: "DUBAI",
+        name: "NORYX DUBAI",
+        role: "Processing & Quality",
+      },
+      {
+        code: "PARAGUAY",
+        name: "NORYX PARAGUAY",
+        role: "Distribution Hub",
+      },
+      {
+        code: "BRAZIL",
+        name: "NORYX BRAZIL",
+        role: "B2B Market",
+      },
+    ],
+    coreTitle: "Connecting the operation",
+    coreItems: [
+      "NORYX OPERATIONS PLATFORM",
+      "NORYX VERIFIED",
+      "DEVICE PASSPORT",
+    ],
+    coreNote:
+      "Technology and data are designed to cut across every stage of the ecosystem.",
+  },
   network: {
     id: "global-network",
-    eyebrow: "10 / GLOBAL NETWORK",
+    eyebrow: "12 / GLOBAL NETWORK",
     title: "Global Network",
     subtitle:
-      "A geographic model designed to connect international inventory with high demand markets.",
+      "A geographic model designed to connect international inventory with high-demand markets.",
     mapAria:
       "Global operating flow from USA to Dubai to Paraguay to Brazil",
     nodes: [
       {
         code: "USA",
         name: "United States",
-        role: "Sourcing",
+        role: "Origin / Sourcing",
       },
       {
         code: "DUBAI",
@@ -340,16 +469,17 @@ export const en = {
   },
   future: {
     id: "vision",
-    eyebrow: "11 / VISION",
+    eyebrow: "13 / VISION",
     titleLine1: "BUILDING THE NEXT",
     titleLine2: "MOBILE DEVICE ECOSYSTEM.",
-    body: "Our vision goes beyond moving devices between markets. NORYX is being designed to create a global ecosystem where technology, quality, traceability and distribution work as a single operation.",
+    body: "The NORYX vision goes beyond moving devices between markets. We are designing an international infrastructure where sourcing, technical processing, quality, traceability, technology and distribution can work as parts of a single operation.",
+    closingLine: "FROM SOURCE TO SECOND LIFE.",
     imageAlt:
       "Cinematic conceptual view of a modern desert skyline representing future vision.",
   },
   contact: {
     id: "contact",
-    eyebrow: "12 / CONTACT",
+    eyebrow: "14 / CONTACT",
     titleLine1: "LET'S BUILD",
     titleLine2: "WHAT COMES NEXT.",
     intro:

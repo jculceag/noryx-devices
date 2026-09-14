@@ -17,7 +17,7 @@ export function OsBoard({
     <div className="border border-hairline bg-surface p-5 md:p-8">
       <div className="mb-6 flex flex-wrap items-end justify-between gap-3 border-b border-hairline pb-5">
         <div>
-          <p className="font-display text-lg tracking-wide text-white">
+          <p className="font-display text-base tracking-wide text-white md:text-lg">
             {osName}
           </p>
           <p className="mt-1 text-sm text-muted">{tagline}</p>
@@ -38,7 +38,7 @@ export function OsBoard({
         ))}
       </ul>
 
-      <ul className="grid grid-cols-2 gap-px bg-hairline sm:grid-cols-3 lg:grid-cols-5">
+      <ul className="grid grid-cols-2 gap-px bg-hairline sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {modules.map((mod, i) => (
           <li
             key={mod}

@@ -15,7 +15,7 @@ type VerifiedProps = {
 export function Verified({ dict }: VerifiedProps) {
   return (
     <Section id={dict.id} density="compact" className="bg-surface/40">
-      <div className="grid items-start gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
+      <div className="grid items-start gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
         <Reveal>
           <Eyebrow>{dict.eyebrow}</Eyebrow>
           <Headline className="mt-5 text-[clamp(2rem,4.5vw,3.5rem)]">
@@ -24,6 +24,23 @@ export function Verified({ dict }: VerifiedProps) {
           <p className="mt-4 text-lg text-titanium">{dict.subtitle}</p>
           <Prose className="mt-6">{dict.body}</Prose>
           <Prose className="mt-4 text-sand/90">{dict.designed}</Prose>
+
+          <p className="mt-8 text-[11px] uppercase tracking-[0.22em] text-sand">
+            {dict.historyIntro}
+          </p>
+          <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 sm:grid-cols-3">
+            {dict.historyFields.map((field) => (
+              <li
+                key={field}
+                className="border-t border-hairline pt-2 text-[11px] uppercase tracking-[0.12em] text-muted"
+              >
+                {field}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-5 text-xs leading-relaxed text-muted">
+            {dict.developmentNote}
+          </p>
 
           <div className="relative mt-8 aspect-[3/4] max-w-sm overflow-hidden border border-hairline">
             <Image
@@ -49,6 +66,7 @@ export function Verified({ dict }: VerifiedProps) {
             deviceId={dict.deviceId}
             demoNote={dict.demoNote}
             grade={dict.grade}
+            gradeSub={dict.gradeSub}
             status={dict.certStatus}
             rows={dict.rows}
           />

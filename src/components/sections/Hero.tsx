@@ -54,6 +54,9 @@ export function Hero({ dict }: HeroProps) {
           <Prose className="mt-8 max-w-xl text-titanium/90">
             {dict.subheadline}
           </Prose>
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-sand/85">
+            {dict.journeyLine}
+          </p>
         </Reveal>
 
         <Reveal immediate delay={0.18}>

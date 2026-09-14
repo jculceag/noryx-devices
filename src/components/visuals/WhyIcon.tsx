@@ -2,7 +2,8 @@ type WhyIconName =
   | "integration"
   | "quality"
   | "traceability"
-  | "distribution";
+  | "distribution"
+  | "intelligence";
 
 export type { WhyIconName };
 
@@ -53,6 +54,15 @@ export function WhyIcon({ name, className = "h-7 w-7" }: WhyIconProps) {
         <>
           <circle cx="16" cy="16" r="11" {...common} />
           <path d="M5 16h22M16 5c3.5 3.8 3.5 18.2 0 22M16 5c-3.5 3.8-3.5 18.2 0 22" {...common} />
+        </>
+      ) : null}
+      {name === "intelligence" ? (
+        <>
+          <path d="M8 22V12M14 22V8M20 22V14M26 22V10" {...common} />
+          <circle cx="8" cy="10" r="1.5" fill={stroke} stroke="none" />
+          <circle cx="14" cy="6" r="1.5" fill={stroke} stroke="none" />
+          <circle cx="20" cy="12" r="1.5" fill={stroke} stroke="none" />
+          <circle cx="26" cy="8" r="1.5" fill={stroke} stroke="none" />
         </>
       ) : null}
     </svg>

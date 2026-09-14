@@ -12,14 +12,15 @@ export function WorldMap({ labels, ariaLabel }: WorldMapProps) {
   const uid = useId().replace(/:/g, "");
   const patternId = `noryx-dots-${uid}`;
 
+  // Approximate geographic anchors so Paraguay (inland) and Brazil (east coast) stay distinct.
   const nodes = [
-    { code: "USA", x: 220, y: 210 },
-    { code: "DUBAI", x: 620, y: 230 },
-    { code: "PARAGUAY", x: 340, y: 380 },
-    { code: "BRAZIL", x: 390, y: 350 },
+    { code: "USA", x: 210, y: 195 },
+    { code: "DUBAI", x: 640, y: 225 },
+    { code: "PARAGUAY", x: 330, y: 395 },
+    { code: "BRAZIL", x: 420, y: 345 },
   ];
 
-  const path = `M ${nodes[0].x} ${nodes[0].y} C 360 120, 520 140, ${nodes[1].x} ${nodes[1].y} S 460 320, ${nodes[2].x} ${nodes[2].y} S 370 360, ${nodes[3].x} ${nodes[3].y}`;
+  const path = `M ${nodes[0].x} ${nodes[0].y} C 360 110, 540 130, ${nodes[1].x} ${nodes[1].y} S 470 310, ${nodes[2].x} ${nodes[2].y} S 380 360, ${nodes[3].x} ${nodes[3].y}`;
 
   return (
     <div className="relative w-full overflow-hidden">
