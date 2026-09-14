@@ -19,9 +19,9 @@ const sora = Sora({
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  title: "NORYX Devices | Global Mobile Device Ecosystem",
+  title: "NORYX Devices | Ecossistema Global de Dispositivos Móveis",
   description:
-    "NORYX Devices is building an international ecosystem for mobile device sourcing, technical processing, quality control, digital traceability and B2B distribution.",
+    "A NORYX Devices está construindo um ecossistema internacional de sourcing, processamento técnico, controle de qualidade, rastreabilidade digital e distribuição B2B de dispositivos móveis.",
   icons: {
     icon: [{ url: "/brand/favicon.svg", type: "image/svg+xml" }],
     shortcut: "/brand/favicon.svg",
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${sora.variable}`}>
+    <html lang="pt" className={`${inter.variable} ${sora.variable}`}>
       <body className="min-h-screen bg-bg font-sans text-titanium antialiased">
         <GrainOverlay />
         {children}

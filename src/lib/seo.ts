@@ -17,7 +17,7 @@ export function buildPageMetadata(
   for (const l of locales) {
     languages[l] = `${site}/${l}${path}`;
   }
-  languages["x-default"] = `${site}/en${path}`;
+  languages["x-default"] = `${site}/pt${path}`;
 
   return {
     title: dict.meta.title,

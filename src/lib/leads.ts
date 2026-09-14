@@ -91,7 +91,7 @@ export async function dispatchLead(
             `Email: ${lead.email}`,
             `Phone: ${lead.phone || "-"}`,
             `Type: ${lead.type}`,
-            `Locale: ${lead.locale || "en"}`,
+            `Locale: ${lead.locale || "pt"}`,
             "",
             lead.message,
           ].join("\n"),

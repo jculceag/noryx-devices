@@ -23,7 +23,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). `/` redirects to `/en`.
+Open [http://localhost:3000](http://localhost:3000). `/` redirects to `/pt`.
 
 ```bash
 npm run lint
@@ -58,8 +58,8 @@ Section images live under `public/images/noryx/<section>/`. Keep filenames or up
 
 ## Internationalization
 
-- Primary locale: English (`/en`)
-- Brazilian Portuguese: `/pt`
+- Primary locale: Portuguese (`/pt`)
+- Secondary: English (`/en`)
 - Dictionaries: `src/i18n/dictionaries/{en,pt}.ts`
 - Future locales (`es`, `ar`) are prepared in `src/i18n/locales.ts` (including RTL direction for Arabic)
 
