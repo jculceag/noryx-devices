@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg: #080808;
+  --color-surface: #101010;
+  --color-surface-elevated: #161616;
+  --color-titanium: #c9c9c9;
+  --color-sand: #d9c9a7;
+  --color-emerald: #0f3d32;
+  --color-white: #ffffff;
+  --color-muted: #8c8c8c;
+  --color-hairline: rgb(201 201 201 / 0.12);
+  --color-hairline-strong: rgb(201 201 201 / 0.22);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-sora);
+
+  --shadow-glow-sand: 0 0 80px rgb(217 201 167 / 0.08);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-titanium);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: rgb(217 201 167 / 0.28);
+    color: var(--color-white);
+  }
+
+  :focus-visible {
+    outline: 1px solid var(--color-sand);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .text-metallic {
+    color: #f3f3f3;
+    text-shadow: 0 1px 0 rgb(255 255 255 / 0.12);
+  }
+
+  .radial-glow {
+    background: radial-gradient(
+      ellipse 70% 50% at 50% 0%,
+      rgb(217 201 167 / 0.07),
+      transparent 70%
+    );
+  }
+
+  .radial-glow-emerald {
+    background: radial-gradient(
+      ellipse 60% 45% at 80% 20%,
+      rgb(15 61 50 / 0.35),
+      transparent 70%
+    );
+  }
+
+  .measure {
+    max-width: 42rem;
+  }
+
+  .container-noryx {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1440px;
+    padding-inline: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .container-noryx {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .container-noryx {
+      padding-inline: 4rem;
+    }
+  }
+}
